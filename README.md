@@ -22,40 +22,20 @@ AutoMarket е Android приложение, което позволява на �
 
 ```
 UI Layer  (Jetpack Compose Screens)
-    ↓  observes StateFlow
 ViewModel  (Hilt ViewModel)
-    ↓  calls
 Repository  (CarRepository)
-    ↓  queries
 Room Database  (CarDao → SQLite)
 ```
 
 | Слой | Технология |
 |---|---|
-| UI | Jetpack Compose, Material3 |
+| UI |  Material3 |
 | Navigation | Navigation Compose |
-| ViewModel | AndroidX ViewModel + Coroutines |
-| Repository | CarRepository (@Singleton) |
+| ViewModel | AndroidX ViewModel and Coroutines |
+| Repository | CarRepository - Singleton repo |
 | Database | Room 2.6.1, SQLite |
 | DI | Hilt 2.51.1 |
 | Extra Feature | Share Intent |
-
----
-
-## Технологии и версии
-
-| Библиотека | Версия |
-|---|---|
-| Kotlin | 2.0.21 |
-| Jetpack Compose BOM | 2024.12.01 |
-| Room | 2.6.1 |
-| Hilt | 2.51.1 |
-| Navigation Compose | 2.8.5 |
-| Coroutines | 1.8.1 |
-| Retrofit | 2.11.0 |
-| OkHttp | 4.12.0 |
-| Min SDK | 24 (Android 7.0) |
-| Target SDK | 36 |
 
 ---
 
@@ -79,12 +59,9 @@ SplashScreen (2с)
    ```bash
    git clone https://github.com/SamuilDobrinski/MobileApps2025-2301681022
    ```
-2. Отвори проекта в **Android Studio Hedgehog** или по-нов
+2. Отвори проекта в **Android Studio **
 3. Изчакай **Gradle sync** да завърши
 4. Стартирай на емулатор или устройство с **API 24+**
-
-> За стартиране на тестовете: `./gradlew test`
-
 ---
 
 ## Тестови акаунти
@@ -93,15 +70,6 @@ SplashScreen (2с)
 |---|---|
 | Email | test@automarket.bg |
 | Парола | Test1234 |
-
----
-
-## Скрийншотове
-
-| Начало | Детайли | Публикувай |
-|---|---|---|
-| ![Home](screenshots/home.png) | ![Detail](screenshots/detail.png) | ![Post](screenshots/post.png) |
-
 ---
 
 ## APK

@@ -60,6 +60,7 @@ dependencies {
     implementation(libs.compose.activity)
     implementation(libs.compose.navigation)
     debugImplementation(libs.compose.ui.tooling)
+    implementation(libs.compose.material.icons.extended)
 
     // Lifecycle / ViewModel
     implementation(libs.lifecycle.viewmodel.ktx)

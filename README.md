@@ -76,6 +76,6 @@ SplashScreen (2с)
 
 Свали и инсталирай директно:
 
-[📦 apk/app-release.apk](apk/app-release.apk)
+[apk/app-release.apk](apk/app-release.apk)
 
 > Размер ≤ 60 MB · Min SDK 24 · Release build с R8

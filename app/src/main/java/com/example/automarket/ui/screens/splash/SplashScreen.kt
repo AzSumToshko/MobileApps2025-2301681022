@@ -1,4 +1,4 @@
-package com.example.automarket.ui.screens
+package com.example.automarket.ui.screens.splash
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -37,39 +37,15 @@ fun SplashScreen(navController: NavHostController) {
             .fillMaxSize()
             .background(Brush.verticalGradient(listOf(PrimaryDark, PrimaryVariant, PrimaryDarkest)))
     ) {
-        Column(
-            modifier = Modifier.align(Alignment.Center),
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Icon(
-                imageVector = Icons.Default.DirectionsCar,
-                contentDescription = null,
-                tint = Color.White,
-                modifier = Modifier.size(80.dp)
-            )
+        Column(modifier = Modifier.align(Alignment.Center), horizontalAlignment = Alignment.CenterHorizontally) {
+            Icon(Icons.Default.DirectionsCar, null, tint = Color.White, modifier = Modifier.size(80.dp))
             Spacer(Modifier.height(16.dp))
-            Text(
-                text = "AutoMarket",
-                fontSize = 36.sp,
-                fontWeight = FontWeight.Bold,
-                color = Color.White,
-                letterSpacing = 2.sp
-            )
+            Text("AutoMarket", fontSize = 36.sp, fontWeight = FontWeight.Bold, color = Color.White, letterSpacing = 2.sp)
             Spacer(Modifier.height(8.dp))
-            Text(
-                text = "Намери колата на мечтите си",
-                fontSize = 14.sp,
-                color = Accent,
-                textAlign = TextAlign.Center
-            )
+            Text("Намери колата на мечтите си", fontSize = 14.sp, color = Accent, textAlign = TextAlign.Center)
         }
-
         LinearProgressIndicator(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 48.dp)
-                .align(Alignment.BottomCenter)
-                .padding(bottom = 48.dp),
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 48.dp).align(Alignment.BottomCenter).padding(bottom = 48.dp),
             color = Accent,
             trackColor = Color.White.copy(alpha = 0.2f)
         )
